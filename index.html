@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <title>Simple Tailwind Starter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Ariff Sulaiman's Website</title>
   </head>
   <body class=" bg-gray-400 text-white">
     <section id="intro">
       <div class="container mx-auto text-center">
-        <h3 class="w-auto inline-block mt-40 welcomeFont1 text-7xl outline-1 ">WELC</h3>
-        <h3 class="w-auto inline-block welcomeFont2 text-7xl outline-1 ">O</h3>
-        <h3 class="w-auto inline-block welcomeFont1 text-7xl outline-1 ">ME</h3>
+       <div class="mt-40 mx-auto ">
+        <h3 class="w-auto inline-block welcomeFont1 text-8xl md:text-9xl outline-1 ">WELC</h3>
+        <h3 class="w-auto inline-block welcomeFont2 text-8xl outline-1 md:text-9xl ">O</h3>
+        <h3 class="w-auto inline-block welcomeFont1 text-8xl outline-1 md:text-9xl ">ME</h3>
+      </div>
         <h2 class=" mx-auto text-center text-xs mt-6 w-5/6 italic">This is Muhamad Ariff Bin Sulaiman's Portfolio Website</h2>
-        <div class="flex flex-col md:flex-row md:items-center">
-         <img src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png" class="w-60 h-60 mx-auto my-5" alt="">
-         <p class="inline-block w-5/6 mx-auto my-10 md:my-0 text-base">Muhamad Ariff Bin Sulaiman is a 32 years-old Mechanical Engineer from Malaysia who transitions into Software Engineering. He is currently seeking for a Junior Front-End Developer role. It has been <em>1</em> year since Ariff has started learning web development. You can check out the programming languages that he has learnt and projects that he has carried out below.</p>
+        <div class="flex flex-col space-y-2 mt-20 md:space-y-0 md:flex-row md:items-center md:space-x-8 lg:space-x-12">
+         <img src="images/ariff.sulaiman.pf.png.png" class="w-60 h-60 mx-auto my-5 border-white border-4 rounded-full transform transition-all duration-500 hover:scale-110 hover:cursor-pointer" alt="">
+         <p class="inline-block w-5/6 mx-auto my-10 md:my-0 md:text-left text-base md:text-lg">Muhamad Ariff Bin Sulaiman is a 32 years-old Mechanical Engineer from Malaysia who transitions into Software Engineering. Graduated from Universiti Putra Malaysia in Bachelor of Engineering (Mechanical) in 2014, he later worked in the construction industry, mainly in construction of high-rise buildings. But now he is seeking to switch career into Software Engineering. He is currently seeking for a Junior Front-End Developer role. It has been <em>1</em> year since Ariff has started learning web development. You can check out the programming languages that he has learnt and projects that he has carried out below.</p>
         </div>
       </div>
     </section>
 
-    <h2 class="text-center underline">PROGRAMMING LANGUAGES</h2>
+    <h2 class="text-center underline my-16">2. PROGRAMMING LANGUAGES</h2>
     <section id="skills">
       <!-- <div class="container mx-auto flex flex-col md:flex-row  md:items-center "> -->
       <div class="container mx-auto my-10 flex flex-col ">
         
-        <div class="flex justify-center">
+        <div class="flex justify-center space-x-4">
         <img src="images/html-5.png" alt="" class=" h-24 w-24">
         <img src="images/css-3.png" alt="" class="h-24 w-24">
         <img src="images/js.png" alt="" class="h-24 w-24 flex flex-end">
@@ -45,12 +47,49 @@
 
     </section>
 
-    <h2 class="text-center underline">PROJECTS</h2>
+    <h2 class="text-center underline">3. PROJECTS</h2>
 
     <section id="projects">
-      <div class="container mx-auto flex flex-col my-10 md:flex-row">
-          <div class="w-60 h-60 mx-auto"><a href="https://ariffsulaiman.github.io/To-Do-App/">TO-DO APP</a></div>
-          <div class="w-60 h-60 mx-auto"><h2>ANGULAR PROJECT</h2></div>
+      <div class="container mx-auto flex flex-col md:justify-center my-10 space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
+        
+        <a class="relative w-3/6 md:max-w-sm flex items-start justify-between mx-auto md:mx-0 rounded-xl border
+                 border-gray-100 p-4 shadow-xl sm:p-6 lg:p-8 hover:cursor-pointer  
+                  transform transition duration-500 hover:scale-110"
+        href="https://ariffsulaiman.github.io/To-Do-App/" target="_blank">
+         <div class="pt-4 text-gray-500 mx-auto">
+          <embed src="images/svg-react.svg" type="" class="h-8 w-8 mx-auto sm:h-10 sm:w-10">
+      
+          <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+            To-Do App - REACT
+          </h3>
+      
+          <p class="mt-2 hidden text-sm sm:block">
+            My course project for React
+          </p>
+        </div>
+      
+
+        </a>
+      
+        <a class="relative w-3/6 md:max-w-sm flex items-start justify-between mx-auto md:mx-0  rounded-xl border
+                 border-gray-100 p-4 shadow-xl sm:p-6 lg:p-8  hover:cursor-pointer
+                 transform transition-all duration-500 hover:scale-110"
+           href="https://ariffsulaiman.github.io/Angular-Recipe-Project/" target="_blank">
+       
+       <div class="pt-4 text-gray-500 mx-auto">
+
+        <embed src="images/svg-angular.svg" type="" class="h-8 w-8 mx-auto sm:h-10 sm:w-10">
+    
+        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">
+          Recipe App - ANGULAR
+        </h3>
+    
+        <p class="mt-2 hidden text-sm sm:block">
+          My course project for Angular, for getting familiar with Angular's features
+        </p>
+      </div>
+
+        </a>
       </div>
     </section>
     
@@ -58,7 +97,7 @@
     <section id="contact">
 
     </section>
-
-
+    <div class="cursor"></div>
+    
   </body>
 </html>
