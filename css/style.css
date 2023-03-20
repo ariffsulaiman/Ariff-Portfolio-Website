@@ -447,12 +447,8 @@ body {
   /* background-color: blue; */
 }
 
-p {
+p, h2 {
   font-family: 'Roboto Condensed', sans-serif;
-}
-
-h2 {
-  font-family: 'Righteous', cursive;
 }
 
 *, ::before, ::after {
@@ -590,6 +586,11 @@ h2 {
   margin-bottom: 4rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -597,6 +598,10 @@ h2 {
 
 .-mt-8 {
   margin-top: -2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-2 {
@@ -721,12 +726,12 @@ h2 {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -747,9 +752,18 @@ h2 {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-sky-900 {
+  --tw-gradient-from: #0c4a6e;
+  --tw-gradient-to: rgb(12 74 110 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-sky-500 {
+  --tw-gradient-to: #0ea5e9;
 }
 
 .p-4 {
@@ -810,9 +824,9 @@ h2 {
   font-style: italic;
 }
 
-.text-gray-500 {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -857,19 +871,13 @@ h2 {
   transition-duration: 500ms;
 }
 
-.welcomeFont1 {
-  font-family: 'Righteous', cursive;
-  color: white;
-  text-shadow:
-     -2px -2px 0 #000,  
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-       2px 2px 0 #000;
+.duration-700 {
+  transition-duration: 700ms;
 }
 
-.welcomeFont2 {
-  font-family: 'Righteous', cursive;
-  color: rgb(229, 103,23);
+.welcomeFont1 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
   text-shadow:
      -2px -2px 0 #000,  
       2px -2px 0 #000,
@@ -885,6 +893,11 @@ h2 {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1001,5 +1014,6 @@ h2 {
     padding: 2rem;
   }
 }
+
 
 
